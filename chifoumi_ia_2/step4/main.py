@@ -8,7 +8,7 @@ model = tf.keras.models.load_model('my_model.h5')
 if __name__ == "__main__":
     while(1):
         img = "../rps-test-set/scissors/testscissors01-03.png"
-        img = image.load_img(path, target_size=(150, 150))
+        img = image.load_img(img, target_size=(150, 150))
         x = image.img_to_array(img)
         x = np.expand_dims(x, axis=0)
         images = np.vstack([x])

@@ -74,7 +74,7 @@ model.fit(X_train, y_train, epochs=..., batch_size=..., validation_data=(..., ..
 #--------------------------------------------------------------------------------------------------------------
 
 #Évaluer le modèle sur les données de validation et afficher la perte et la précision
-loss, accuracy = model.evaluate(X_val, y_val)
+loss, accuracy = model.evaluate(X_validation, y_validation)
 
 #--------------------------------------------------------------------------------------------------------------
 
@@ -87,6 +87,7 @@ predictions = model.predict(...)
 
 # Affiche les résultats de prédiction
 operations = ['addition', 'soustraction', 'multiplication']
+predicted_classes = ...
 
 for i, (data, prediction) in enumerate(zip(new_data, predicted_classes)):
     print(f'Data {i+1}: {data}')

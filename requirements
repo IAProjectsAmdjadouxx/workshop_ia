@@ -2,6 +2,5 @@ numpy
 tensorflow
 sklearn
 keras
-zipfile
 matplotlib
 os
